@@ -7,7 +7,6 @@ public class WithDraw {
         withdraw(names, balances, "anna", 10000);
         System.out.println(Arrays.toString(balances));
     }
-
     public static int withdraw(String[] clients, int[] balances, String client, int money) {
         int clientindex = 0;
         for (String el : clients) {
@@ -17,13 +16,9 @@ public class WithDraw {
             clientindex++;
         }
         if (balances[clientindex] < money) {
-
-
-            balances[clientindex] = -1;
+           balances[clientindex] = -1;
         } else {
             balances[clientindex] -= money;
-
-
         }
         return balances[clientindex] ;
     }
