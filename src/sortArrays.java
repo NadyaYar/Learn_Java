@@ -6,6 +6,7 @@ public class SortArrays {
         System.out.println(Arrays.toString(ArrayFromMinToMax(array1)));
         System.out.println(Arrays.toString(ArrayFromMaxToMin(array1)));
     }
+    
     static int[] ArrayFromMinToMax(int[] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
@@ -18,6 +19,7 @@ public class SortArrays {
         }
         return array;
     }
+    
     static int[] ArrayFromMaxToMin(int[] array) {
          for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
