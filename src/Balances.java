@@ -13,8 +13,7 @@ public class Balances {
     static String[] findbalance(String[] clients, int[] balances, int n) {
         int count = 0;
         for (int balance : balances) {
-            if (balance >= n)
-                count++;
+            if (balance >= n) count++;
         }
         String[] results = new String[count];
         int index = 0;
@@ -29,8 +28,7 @@ public class Balances {
     static String[] findbalance(String[] clients, int[] balances) {
         int count = 0;
         for (int balance : balances) {
-            if (balance < 0)
-                count++;
+            if (balance < 0) count++;
         }
         String[] results = new String[count];
         int index = 0;
