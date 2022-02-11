@@ -25,6 +25,7 @@ public class Balances {
         }
         return results;
     }
+    
     static String[] findbalance(String[] clients, int[] balances) {
         int count = 0;
         for (int balance : balances) {
@@ -42,6 +43,7 @@ public class Balances {
         }
         return results;
     }
+    
     public static int  depositMoney1(String[] clients, int[] balances, String client, int money) {
         int clientindex = 0;
         for (String el : clients) {
